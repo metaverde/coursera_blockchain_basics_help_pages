@@ -1,0 +1,58 @@
+Installing VirtualBox was the fun easy hard part.
+I got it installed any number of times, 
+but I had missed an essential previous step or two
+and had run into frustration not being able to get my virtual machine
+up and running.
+
+I may be in error, but I believe the instructions
+in the included course file are woefully incomplete.
+
+I'm on Ubuntu 18.04.
+These are the instructions I used after the
+course provided instructions had
+frustrated me for more than one day 
+and I walked away from it for a few days.
+
+https://tecadmin.net/install-virtualbox-on-ubuntu-18-04/
+
+First run an apt update and apt upgrade.
+This seems standard and makes sense, right?
+
+sudo apt update
+sudo apt upgrade
+
+This is taking a few minutes.
+
+This is the part here that is not in the course instructions...
+
+"Now, import the Oracle public key to your system signed the Debian packages using the following commands."
+
+I'm WHAT?
+
+Check out page one of Environment-Setup.pdf
+then chuck it and use the link I provided instead.
+
+Next command I'm running:
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+
+Then:
+
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+And:
+
+sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib"
+
+Finally, to install a version suitable for the project,
+use the command 
+
+sudo apt install virtualbox-5.2
+
+PLEASE NOTICE that you have changed the command provided from 6.0 to 5.2
+
+VirtualBox should now be installed.
+I use the icon on my app screen to access it
+but you can also use the command 
+virtualbox
+

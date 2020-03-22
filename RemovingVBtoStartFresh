@@ -17,8 +17,8 @@ the supplied instructions.
 
 So let's do this thing.
 
-I got the command from here, 
-https://rtmccormick.com/2018/03/03/remove-virtualbox-ubuntu-16-04-xenial/
+I got the command from 
+[here](https://rtmccormick.com/2018/03/03/remove-virtualbox-ubuntu-16-04-xenial/)
 and I'm going to cut right to the chase.
 You want to actually purge the VB from your system
 not just uninstall and remove various files and directories.

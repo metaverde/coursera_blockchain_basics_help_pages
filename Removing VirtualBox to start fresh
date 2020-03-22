@@ -17,8 +17,8 @@ the supplied instructions.
 
 So let's do this thing.
 
-I got the command from 
-[here](https://rtmccormick.com/2018/03/03/remove-virtualbox-ubuntu-16-04-xenial/)
+I got the command from here:
+https://rtmccormick.com/2018/03/03/remove-virtualbox-ubuntu-16-04-xenial/
 and I'm going to cut right to the chase.
 You want to actually purge the VB from your system
 not just uninstall and remove various files and directories.
@@ -29,12 +29,12 @@ sudo apt-get remove virtualbox* --purge
 Oh interesting... I accidentally installed 5.2.38 instead of 5.2.22.
 Maybe that's why it worked.
 
-After making sure I was in the home directory I run ls -al
-and looked for a “VirtualBox VMs” directory.
+After making sure I'm in the home directory I run ls -al
+and look for a “VirtualBox VMs” directory.
 
 drwx------   3 petra petra      4096 Mar 12 16:00 'VirtualBox VMs'
 
-I removed that with rm -rf ./"VirtualBox VMs".
+I remove that with rm -rf ./"VirtualBox VMs".
 
 Now I go into my .config directory and double-check
 that the previous purge command removed the VirtualBox file there

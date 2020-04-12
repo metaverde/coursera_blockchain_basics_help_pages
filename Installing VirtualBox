@@ -1,4 +1,8 @@
-POST /markdown
+{
+  "text": "Installing VirtualBox",
+  "mode": "gfm",
+  "context": "github/metaverde"
+}
 
 Installing VirtualBox was the fun easy hard part.
 I got it installed any number of times, 

@@ -18,8 +18,8 @@ https://tecadmin.net/install-virtualbox-on-ubuntu-18-04/
 First run an apt update and apt upgrade.
 This seems standard and makes sense, right?
 
-sudo apt update
-sudo apt upgrade
+'''sudo apt update'''
+'''sudo apt upgrade'''
 
 This is taking a few minutes.
 
@@ -34,20 +34,20 @@ then chuck it and use the link I provided instead.
 
 Next command I'm running:
 
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+'''wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -'''
 
 Then:
 
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+'''wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -'''
 
 And:
 
-sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib"
+'''sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib"'''
 
 Finally, to install a version suitable for the project,
 use the command 
 
-sudo apt install virtualbox-5.2
+'''sudo apt install virtualbox-5.2'''
 
 PLEASE NOTICE that you have changed the command provided from 6.0 to 5.2
 
